@@ -204,15 +204,17 @@ main {
     }
 
     .journal-buttons {
-        justify-content: start;
-        gap: 15px
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        flex-wrap: wrap;
     }
-
-        .journal-buttons button {
-            width: 50px;
-            height: 40px;
-            flex-grow: 1;
-        }
+    
+    .journal-buttons button {
+        width: calc(20% - 12px);
+        height: 40px;
+        flex-shrink: 0; 
+    }
 }
 
 .radio-buttons, .checkbox-buttons {
