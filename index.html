@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" asp-append-version="true" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <script src="https://kit.fontawesome.com/c1f8e4004c.js" crossorigin="anonymous"></script>
+    <title>Financial Generator</title>
+</head>
+
+<body>
+    <main>
+        <div class="swagger-container">
+            <div class="swagger-title-container">
+                <h1 class="swagger-title">Exact</h1>
+                <h2 class="swagger-subtitle">Dagboek Genereren</h2>
+            </div>
+            <div class="swagger-sections">
+                <div class="swagger-section menu-section">
+                    <h2 class="swagger-section-title">
+                        Boekdeel
+                    </h2>
+                    <div class="journal-buttons">
+                        <button class="active">
+                            51
+                        </button>
+                        <button>
+                            53
+                        </button>
+                        <button>
+                            55
+                        </button>
+                        <button>
+                            56
+                        </button>
+                        <button>
+                            57
+                        </button>
+                        <button>
+                            58
+                        </button>
+                        <button>
+                            59
+                        </button>
+                        <button>
+                            81
+                        </button>
+                        <button>
+                            82
+                        </button>
+                        <button>
+                            85
+                        </button>
+                    </div>
+                </div>
+
+                <div class="journals">
+                    <div class="swagger-section journal-id-51">
+                        <h2 class="swagger-section-title">51. Invoice Matching</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 51, het boekstuk van de factuurafstemming.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-51-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-51-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-51-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-51-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-53">
+                        <h2 class="swagger-section-title">53. Purchase Invoices</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 53, het boekstuk van de inkoopfacturen.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-53-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-53-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-53-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-53-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-55">
+                        <h2 class="swagger-section-title">55. Stock Mutations</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 55, het boekstuk van de voorraadmutaties.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-55-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-55-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-55-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-55-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-56">
+                        <h2 class="swagger-section-title">56. Stock Revaluations</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 56, het boekstuk van de voorraadwaarderingen.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-56-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-56-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-56-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-56-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-57">
+                        <h2 class="swagger-section-title">57. General Journal</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 57, het dagboek van het algemene dagboek.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-57-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-57-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-57-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-57-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-58">
+                        <h2 class="swagger-section-title">58. Stock Counting</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 58, het boekstuk van de voorraadtelling.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-58-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-58-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-58-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-58-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-59">
+                        <h2 class="swagger-section-title">59. Receipts</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 59, het boekstuk van de ontvangen betalingen.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-59-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-59-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-59-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-59-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-81">
+                        <h2 class="swagger-section-title">81. Free Invoices</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 81, het boekstuk van de vrije facturen.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-81-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-81-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-81-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-81-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-82">
+                        <h2 class="swagger-section-title">82. Sales Cost Prices</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 82, het boekstuk van de verkoopkostprijzen.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-82-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-82-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <button id="journal-id-82-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-82-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+
+                    <div class="swagger-section hidden journal-id-85">
+                        <h2 class="swagger-section-title">85. Sales Invoices</h2>
+                        <p class="swagger-description">
+                            Genereer boekdeel 85, het boekstuk van de verkoopfacturen.
+                        </p>
+                        <div class="swagger-field">
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="fromDate" class="swagger-label">Van</label>
+                                    <input type="date" id="journal-id-85-fromDate" name="fromDate" class="date-input" />
+                                </div>
+                                <div class="date">
+                                    <label for="toDate" class="swagger-label">Tot en met</label>
+                                    <input type="date" id="journal-id-85-toDate" name="toDate" class="date-input" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swagger-text-input">
+                            <label for="invoiceNumber" class="swagger-label">Factuurnummer</label>
+                            <input type="number" id="journal-id-85-number" placeholder="0" />
+                        </div>
+                        <button id="journal-id-85-button" class="swagger-button">Uitvoeren</button>
+                        <div id="journal-id-85-response" class="swagger-response" style="display: none">
+                            <p><!-- Response komt hier --></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Handle journal buttons -->
+<script>
+    $(document).ready(function () {
+        document.querySelectorAll('.journal-buttons button').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const buttonId = event.target.textContent.trim();
+                activateJournalButton(event.target);
+                toggleDisplay(buttonId);
+            });
+        });
+
+        function activateJournalButton(button) {
+            document.querySelectorAll('.journal-buttons button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
+        }
+
+        function toggleDisplay(buttonId) {
+            document.querySelectorAll('[class*="journal-id-"]').forEach(element => {
+                element.classList.add('hidden');
+            });
+
+            const targetElement = document.querySelector(`.journal-id-${buttonId}`);
+            if (targetElement) {
+                targetElement.classList.remove('hidden');
+            }
+        }
+    });
+</script>
+
+<!-- Handle execute button -->
+<script>
+    $(document).ready(function () {
+        function disableJournalButtons() {
+            document.querySelectorAll('[class*="swagger-button"]').forEach(element => {
+                element.classList.add('disabled');
+
+                const spinner = document.createElement('i');
+                spinner.classList.add('fa-solid', 'fa-gear', 'fa-spin');
+
+                element.appendChild(spinner);
+            });
+        }
+
+        function enableJournalButtons() {
+            document.querySelectorAll('[class*="swagger-button"]').forEach(element => {
+                element.classList.remove('disabled');
+
+                const spinner = element.querySelector('i.fa-spin');
+                if (spinner) {
+                    spinner.remove();
+                }
+            });
+        }
+
+        function hideResponse(id) {
+            $(`#journal-id-${id}-response`).slideUp();
+        }
+
+        function callApi(dateRange, journalId, salesInvoiceNumber) {
+            let randomDelay = Math.floor(Math.random() * (3500 - 1400 + 1)) + 1400;
+            const incorrectDate = (!dateRange.FromDate || !dateRange.ToDate);
+
+            if (incorrectDate) {
+                randomDelay = 1000;
+            }
+
+            setTimeout(() => {
+                const responseElement = $(`#journal-id-${journalId}-response`);
+
+                if (incorrectDate) {
+                    responseElement.html("Beide datumvelden moeten worden ingevuld.").slideDown();
+                } else if (journalId == 85 && (isNaN(salesInvoiceNumber) || salesInvoiceNumber === 0)) {
+                    responseElement.html("Er is een incorrect factuurnummer ingevoerd.").slideDown();
+                } else {
+                    responseElement.html(`Boekdeel ${journalId} is gegenereerd.`).slideDown();
+                }
+
+                enableJournalButtons();
+            }, randomDelay);
+        }
+
+        $('button[id^="journal-id-"]').click(function () {
+            const id = $(this).attr('id').split('-')[2];
+            const fromDate = $(`#journal-id-${id}-fromDate`).val();
+            const toDate = $(`#journal-id-${id}-toDate`).val();
+            const number = parseInt($(`#journal-id-${id}-number`).val(), 10);
+
+            const requestData = {
+                FromDate: fromDate,
+                ToDate: toDate
+            };
+
+            disableJournalButtons();
+            hideResponse(id);
+
+            callApi(requestData, id, number);
+        });
+    });
+</script>
